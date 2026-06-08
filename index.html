@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main-container">
+        <section class="form-container">
+            <h3>Add A New Habit</h3>
+            <form action="table" method="GET">
+                <label for="nameHabit">Name of a Habit:</label>
+                <input type="text" name="nameHabit" id="nameHabit" placeholder="e.g. Footaball practice" required>
+                <p id="errorElement"></p><br>
+                git config --global init.defaultBranch <name>                <label for="targetOfDays">Target of Days:</label>
+                <input type="number" name="targetOfDays" value="1" min="1" max="7" id="targetOfDays"><br>
+
+                <label for="category">Category:</label>
+                <select name="category">
+                    <option value="all">All</option>
+                    <option value="health">Health</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="study">Study</option><option value="personal">Personal</option>
+                    </select>
+                <br>
+
+                <div class="addHabitBtn">
+                    <input type="submit" id="addHabitBtn" value="Add">
+                </div>
+
+            </form>
+        </section>
+
+        <section class="habitDisplay-container">
+            <div class="habitDisplay-top">
+                <h3>Habits List</h3>
+                <hr>
+            </div>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Mark Done for Today</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="start-cell">Morning Jog</td>
+                    <td>Fitness</td>
+                    <td class="center-cell"><input type="checkbox" name="markDone" id="markDone"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="start-cell">Climbing</td>
+                    <td>Personal</td>
+                    <td class="center-cell"><input type="checkbox" name="markDone" id="markDone"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="start-cell">Biking</td>
+                    <td>Fitness</td>
+                    <td class="center-cell"><input type="checkbox" name="markDone" id="markDone"></td>
+                </tr>
+            </table><br>
+
+            <div class="stats-container">
+                <div class="listStats">
+                    <label for="totalHabits">Total Habits:</label>
+                    <p id="totalHabits">3</p><br>
+                    <label for="doneToday">Habits Done Today:</label>
+                    <p id="doneToday">5</p><br>
+                    <label for="completionPerc">Completion Percentage:</label>
+                    <p id="completionPerc">80%</p>
+                </div>
+
+                <div class="deleteBtn">
+                    <button type="submit" id="deleteHabitBtn">Delete</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>

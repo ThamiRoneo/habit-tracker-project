@@ -1,0 +1,108 @@
+/* general style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.827);
+    padding: 5px;
+    gap: 8px;
+}
+
+.form-container {
+    max-width: 50%;
+    border-radius: 4px;
+    margin: 2px 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.778);
+    padding: 10px 0;
+}
+
+.habitDisplay-container {
+    max-width: 50%;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.778);
+    padding: 8.4%;
+    padding-top: 0;
+}
+
+
+
+/* form styling */
+form {
+    padding: 50px;
+}
+
+form label,
+form input {
+    margin-bottom: 12px;
+}
+
+.addHabitBtn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#addHabitBtn {
+    padding: 0.5rem 1.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* habit list styling */
+.habitDisplay-top h3,
+.form-container h3 {
+    text-align: center;
+}
+
+/* habit list display styling */
+.form-container hr {
+    margin-bottom: 40px;
+}
+
+table {
+    margin-top: 30px;
+}
+
+table tr {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.start-cell {
+    text-align: start;
+}
+
+.center-cell {
+    text-align: center;
+}
+
+table td~input#markDone {
+    align-items: center;
+}
+
+/* stats and delete button styling */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listStats label,
+.listStats label~p {
+    display: inline-block;
+    /* align-items: center; */
+
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem 1.5rem;
+}
