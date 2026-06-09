@@ -33,7 +33,7 @@
     color: red;
     font-size: 1rem;
     margin-top: 12px;
-    text-alingn: center;
+    text-align: center;
 }
 
 /* form styling */
@@ -77,12 +77,15 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-th, td {
+
+th,
+td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
     vertical-align: middle;
 }
+
 th {
     background-color: #f2f2f2;
 }
