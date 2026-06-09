@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,10 @@
                 <br>
                 <label for="targetOfDays">Target of Days:</label>
                 <input type="number" name="targetOfDays" value="1" min="1" max="7" id="targetOfDays"><br>
- 
+
                 <label for="category">Category:</label>
                 <select name="category" id="category">
-                    <option value="all">All</option>
+                    <option value="empty"></option>
                     <option value="health">Health</option>
                     <option value="fitness">Fitness</option>
                     <option value="study">Study</option>
@@ -29,20 +29,20 @@
                 </select>
                 <br>
                 <p id="errorElement"></p><br>
- 
+
                 <div class="addHabitBtn">
                     <input type="submit" id="addHabitBtn" value="Add">
                 </div>
- 
+
             </form>
         </section>
- 
+
         <section class="habitDisplay-container">
             <div class="habitDisplay-top">
                 <h3>Habits List</h3>
                 <hr>
             </div>
- 
+
             <table>
                 <tr>
                     <th>ID</th>
@@ -50,9 +50,10 @@
                     <th>Category</th>
                     <th>Streak</th>
                     <th>Mark Done for Today</th>
+                    <th>Delete</th>
                 </tr>
             </table><br>
- 
+
             <div class="stats-container">
                 <div class="listStats">
                     <label for="totalHabits">Total Habits:</label>
@@ -62,15 +63,11 @@
                     <label for="completionPerc">Completion Percentage:</label>
                     <p id="completionPerc">0%</p>
                 </div>
- 
-                <div class="deleteBtn">
-                    <button type="submit" id="deleteHabitBtn">Delete</button>
-                </div>
             </div>
         </section>
     </section>
- 
+
     <script src="index.js"></script>
 </body>
- 
+
 </html>
