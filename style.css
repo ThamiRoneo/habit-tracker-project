@@ -29,7 +29,12 @@
     padding-top: 0;
 }
 
-
+#errorElement {
+    color: red;
+    font-size: 1rem;
+    margin-top: 12px;
+    text-alingn: center;
+}
 
 /* form styling */
 form {
@@ -69,11 +74,17 @@ form input {
 
 table {
     margin-top: 30px;
+    border-collapse: collapse;
+    width: 100%;
 }
-
-table tr {
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: center;
     vertical-align: middle;
+}
+th {
+    background-color: #f2f2f2;
 }
 
 .start-cell {
@@ -98,7 +109,6 @@ table td~input#markDone {
 .listStats label~p {
     display: inline-block;
     /* align-items: center; */
-
 }
 
 button {
